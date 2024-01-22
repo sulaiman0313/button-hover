@@ -1,0 +1,41 @@
+*{
+   font-family: sans-serif;
+}
+body{
+    background-color: rgba(30,30,30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+button{
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    color: rgb(24, 255, 43);
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    
+}
+span{
+    background: #999;
+    
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.7s;
+}
+button:hover span{
+    height: 100%;
+    
+}
+
